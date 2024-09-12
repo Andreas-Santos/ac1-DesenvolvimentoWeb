@@ -1,0 +1,13 @@
+<div class="container">
+    <h1 class="text-center mt-3">Conversor de Temperatura</h1>
+    <div class="mb-3">
+        <label for="temp" class="form-label">Temperatura</label>
+        <input type="number" class="form-control" [(ngModel)]="temp" step="0.01" placeholder="Digite a temperatura em Graus Celsius"
+            required>
+    </div>
+    <button class="btn btn-primary" (click)="calcularTemp()">Converter</button>
+    <div class="result text-center">
+        <h2>Fahrenheit (°F): <span id="fahrenheit">{{ fahrenheit }}</span></h2>
+        <h2>Kelvin (K): <span id="kelvin">{{ kelvin }}</span></h2>
+    </div>
+</div>

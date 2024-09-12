@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="text-center mt-3">IMC</h1>
+    <div class="mb-3">
+        <label for="peso" class="form-label">Peso</label>
+        <input type="number" class="form-control" [(ngModel)]="peso" step="0.01" placeholder="Digite o peso em KG"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="altura" class="form-label">Altura</label>
+        <input type="number" class="form-control" [(ngModel)]="altura" step="0.01" placeholder="Digite a altura em metros"
+            required>
+    </div>
+    <button class="btn btn-primary" (click)="calcularIMC()">Calcular</button>
+    <div class="result text-center">
+        <h2>Resultado: <span id="result">{{ resultado }}</span></h2>
+    </div>
+</div>

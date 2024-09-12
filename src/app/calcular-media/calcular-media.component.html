@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="text-center mt-3">Calcular Média</h1>
+    <div class="mb-3">
+        <label for="ac1" class="form-label">AC1</label>
+        <input type="number" class="form-control" [(ngModel)]="ac1" step="0.01" placeholder="Digite o valor da AC1"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="ac2" class="form-label">AC2</label>
+        <input type="number" class="form-control" [(ngModel)]="ac2" step="0.01" placeholder="Digite o valor da AC2"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="ag" class="form-label">AG</label>
+        <input type="number" class="form-control" [(ngModel)]="ag" step="0.01" placeholder="Digite o valor da AG"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="af" class="form-label">AF</label>
+        <input type="number" class="form-control" [(ngModel)]="af" step="0.01" placeholder="Digite o valor da AF"
+            required>
+    </div>
+    <button class="btn btn-primary" (click)="calcularMedia()">Calcular</button>
+    <div class="result text-center">
+        <h2>Resultado: <span id="result">{{ resultado }}</span></h2>
+    </div>
+</div>

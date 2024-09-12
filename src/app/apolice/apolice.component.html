@@ -1,0 +1,27 @@
+<div class="container">
+    <h1 class="text-center mt-3">Apólice de Seguro</h1>
+    <div class="mb-3">
+        <label for="nome" class="form-label">Nome do Segurado</label>
+        <input type="text" class="form-control" [(ngModel)]="nome" step="0.01" placeholder="Digite o nome do Segurado"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="sexo" class="form-label">Sexo</label>
+        <input type="texto" class="form-control" [(ngModel)]="sexo" step="0.01" placeholder="Digite o Sexo do Segurado"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="idade" class="form-label">Idade</label>
+        <input type="number" class="form-control" [(ngModel)]="idade" step="0.01" placeholder="Digite o valor da AG"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="valor" class="form-label">Valor do Automóvel</label>
+        <input type="number" class="form-control" [(ngModel)]="valor" step="0.01" placeholder="Digite o valor da AF"
+            required>
+    </div>
+    <button class="btn btn-primary" (click)="calcularApolice()">Calcular</button>
+    <div class="result text-center">
+        <h2>Resultado: <span id="result">{{ resultado }}</span></h2>
+    </div>
+</div>

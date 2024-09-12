@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-center mt-3">Calculadora</h1>
+    <div class="mb-3">
+        <label for="n1" class="form-label">Número 1</label>
+        <input type="number" class="form-control" [(ngModel)]="n1" step="0.01" placeholder="Digite o primeiro número"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="n2" class="form-label">Número 2</label>
+        <input type="number" class="form-control" [(ngModel)]="n2" step="0.01" placeholder="Digite o segundo número"
+            required>
+    </div>
+    <div class="mb-3">
+        <label for="op" class="form-label">Operação (+, -, /, *)</label>
+        <input type="text" class="form-control" [(ngModel)]="op" step="0.01" placeholder="Digite a operação desejada"
+            required>
+    </div>
+    <button class="btn btn-primary" (click)="calcular()">Calcular</button>
+    <div class="result text-center">
+        <h2>Resultado: <span id="result">{{ resultado }}</span></h2>
+    </div>
+</div>
